@@ -37,20 +37,20 @@ local function get_my_crane_pos(player)
 	-- check operator state
     local pl_meta = player:get_meta()
 	if not pl_meta or pl_meta:get_int("towercrane_isoperator") ~= 1 then
-		return 
+		return
 	end
 	-- check owner
 	local pos = S2P(pl_meta:get_string("towercrane_pos"))
 	local player_name = (player and player:get_player_name()) or ""
     local data = get_crane_data(pos)
 	if not data or player_name ~= data.owner then
-		return 
+		return
 	end
 	-- check protection
 	if minetest.is_protected(pos, player_name) then
-		return 
+		return
 	end
-	
+
 	return pos  -- switch pos
 end
 
@@ -59,7 +59,7 @@ local function is_crane_running(pos)
 	local meta = minetest.get_meta(pos)
 	return meta:get_int("running") == 1
 end
-	
+
 local function is_operator(player)
     local pl_meta = player:get_meta()
 	if not pl_meta or pl_meta:get_int("towercrane_isoperator") ~= 1 then
@@ -72,7 +72,7 @@ local function set_operator_privs(player, pos)
 	local privs = minetest.get_player_privs(player:get_player_name())
 	local meta = player:get_meta()
 	-- Check access conflicts with other mods
-	if meta:get_int("player_physics_locked") == 0 then 
+	if meta:get_int("player_physics_locked") == 0 then
 		if pos and meta and privs then
 			meta:set_string("towercrane_pos", P2S(pos))
 			-- store the player privs default values
@@ -228,7 +228,7 @@ local function control_player(pos, pos1, pos2, player_name)
 				if correction == true then
 					local last_pos = S2P(meta:get_string("last_known_pos"))
 					if last_pos then
-						player:set_pos(last_pos)	
+						player:set_pos(last_pos)
 					end
 				else  -- store last known correct position
 					meta:set_string("last_known_pos", P2S(pl_pos))
@@ -244,7 +244,7 @@ local function control_player(pos, pos1, pos2, player_name)
 		local meta = minetest.get_meta(pos)
 		meta:set_int("running", 0)
 	end
-end	
+end
 
 minetest.register_node("towercrane:mast_ctrl_on", {
 	description = S("Tower Crane Mast Ctrl On"),
@@ -270,7 +270,6 @@ minetest.register_node("towercrane:mast_ctrl_on", {
 		meta:set_string("infotext", S("Switch crane on/off"))
 	end,
 
-	drop = "",
 	paramtype = "light",
 	paramtype2 = "facedir",
 	light_source = 3,
@@ -314,7 +313,6 @@ minetest.register_node("towercrane:mast_ctrl_off", {
 		meta:set_string("infotext", S("Switch crane on/off"))
 	end,
 
-	drop = "",
 	paramtype = "light",
 	paramtype2 = "facedir",
 	sunlight_propagates = true,
