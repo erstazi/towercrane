@@ -1,14 +1,14 @@
 # Tower Crane Mod
 In order to simplify the construction of buildings, the crane forms a construction area in which the player gets fly privs.
 
-Browse on: ![GitHub](https://github.com/erstazi/towercrane)
+Browse on: [GitHub](https://github.com/erstazi/towercrane)
 
-Download: ![GitHub](https://github.com/erstazi/towercrane/archive/master.zip)
+Download: [GitHub](https://github.com/erstazi/towercrane/archive/master.zip)
 
 The crane can be completely assembled by setting only the base block.
 The size of the crane (which is the construction area) and the rope length can be configured.
 
-![Tower Crane](https://github.com/erstazi/towercrane/blob/master/towercrane640.png)
+[Tower Crane](https://github.com/erstazi/towercrane/blob/master/towercrane640.png)
 
 
 ## Introduction
