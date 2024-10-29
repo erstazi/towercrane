@@ -8,7 +8,7 @@ Download: [GitHub](https://github.com/erstazi/towercrane/archive/master.zip)
 The crane can be completely assembled by setting only the base block.
 The size of the crane (which is the construction area) and the rope length can be configured.
 
-[Tower Crane](https://github.com/erstazi/towercrane/blob/master/towercrane640.png)
+![Tower Crane](https://github.com/erstazi/towercrane/blob/master/towercrane640.png)
 
 
 ## Introduction
