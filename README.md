@@ -1,14 +1,14 @@
 # Tower Crane Mod
 In order to simplify the construction of buildings, the crane forms a construction area in which the player gets fly privs.
 
-Browse on: ![GitHub](https://github.com/minetest-mods/towercrane)
+Browse on: ![GitHub](https://github.com/erstazi/towercrane)
 
-Download: ![GitHub](https://github.com/minetest-mods/towercrane/archive/master.zip)
+Download: ![GitHub](https://github.com/erstazi/towercrane/archive/master.zip)
 
 The crane can be completely assembled by setting only the base block.
 The size of the crane (which is the construction area) and the rope length can be configured.
 
-![Tower Crane](https://github.com/minetest-mods/towercrane/blob/master/towercrane640.png)
+![Tower Crane](https://github.com/erstazi/towercrane/blob/master/towercrane640.png)
 
 
 ## Introduction
@@ -17,22 +17,22 @@ The size of the crane (which is the construction area) and the rope length can b
 
 * Right-click the crane base block and set the crane dimensions in height and width (between 8 and 32 by default).
   The crane will be built according to these settings.
-  If there is not enough free space for the crane mast/arm or the potential construction area of the 
+  If there is not enough free space for the crane mast/arm or the potential construction area of the
   crane intersects a protected area from another player, the crane will not be built.
 
 * Right-click the crane switch block to start the crane (get fly privs). The player is placed in front of the crane.
 
-* To remove the crane, destroy the base block.  
+* To remove the crane, destroy the base block.
 
 **Minetest v5.0+ is required!**
 
 ## Dependencies
-default  
+default
 
 
 # License
-Copyright (C) 2017-2020 Joachim Stolberg  
-Code: Licensed under the GNU LGPL version 2.1 or later. See LICENSE.txt and http://www.gnu.org/licenses/lgpl-2.1.txt  
+Copyright (C) 2017-2020 Joachim Stolberg
+Code: Licensed under the GNU LGPL version 2.1 or later. See LICENSE.txt and http://www.gnu.org/licenses/lgpl-2.1.txt
 Textures: Mostly CC0 (by Ammoth)
 
  * `morelights_extras_blocklight.png`: CC BY-SA 4.0 (by random-geek)
