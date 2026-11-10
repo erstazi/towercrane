@@ -37,20 +37,20 @@ local function get_my_crane_pos(player)
 	-- check operator state
     local pl_meta = player:get_meta()
 	if not pl_meta or pl_meta:get_int("towercrane_isoperator") ~= 1 then
-		return
+		return 
 	end
 	-- check owner
 	local pos = S2P(pl_meta:get_string("towercrane_pos"))
 	local player_name = (player and player:get_player_name()) or ""
     local data = get_crane_data(pos)
 	if not data or player_name ~= data.owner then
-		return
+		return 
 	end
 	-- check protection
 	if minetest.is_protected(pos, player_name) then
-		return
+		return 
 	end
-
+	
 	return pos  -- switch pos
 end
 
@@ -59,7 +59,7 @@ local function is_crane_running(pos)
 	local meta = minetest.get_meta(pos)
 	return meta:get_int("running") == 1
 end
-
+	
 local function is_operator(player)
     local pl_meta = player:get_meta()
 	if not pl_meta or pl_meta:get_int("towercrane_isoperator") ~= 1 then
